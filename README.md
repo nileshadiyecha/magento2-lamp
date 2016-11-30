@@ -34,9 +34,10 @@ Environment Variables:
  - MYSQL_ROOT_PASSWORD
  - MYSQL_LOCAL_PASSWORD 
  - MYSQL_LOCAL_USER
+ - MYSQL_LOCAL_DATABASE
  
 MySQl Database Docker Command :
-docker run -i -t -d --name lamp-magento2-mysql -v /var/www/data/:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD:root123 -e MYSQL_LOCAL_USER:magento MYSQL_LOCAL_PASSWORD:magento@123 magento2-mysql
+docker run -i -t -d --name lamp-magento2-mysql -v /var/www/data/:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD:root123 -e MYSQL_LOCAL_USER:magento MYSQL_LOCAL_DATABASE:magento MYSQL_LOCAL_PASSWORD:magento@123 magento2-mysql
 
 Access MySQL from Application Container
 Hostname: db
